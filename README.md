@@ -16,6 +16,8 @@ amp-lab inspect examples/release_seed43_review_local/bundle
 amp-lab deploy examples/release_seed43_review_local/bundle --headless --seconds 20 --velocity 0.6 0 0 --report outputs/result.json
 ```
 
+如果直连下载遇到网络错误，可安装并使用 GitHub CLI：`gh release download v0.1.0 --repo Hzzzzs/beyondamp-g1-lab --pattern g1-amp-seed43-6000.tar.gz --dir examples`，再运行上面的校验与解压命令。
+
 报告中的 `completed` 应为 true、`fallen` 为 false，`mean_velocity` 第一个数约为 0.6 m/s。有桌面时去掉 `--headless` 可观看；录视频时参考[快速开始](docs/quickstart.md)。训练、双仿真、数据和限制见[项目说明](docs/quickstart.md)及[模型卡](docs/experiments/g1_amp_seed43_6000.md)。仅适用于平地仿真，未验证实机和复杂地形。示例包含上游模型许可、数据来源和训练配置，beyondAMP、robotlib作为外部依赖。
 
 ## 项目详情
