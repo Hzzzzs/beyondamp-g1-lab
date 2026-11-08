@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amp-lab"
+version = "0.1.0.dev0"
+description = "Reproducible beyondAMP training and named-policy deployment for Unitree G1"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "PyYAML>=6,<7", "scipy>=1.10,<2"]
+
+[project.optional-dependencies]
+mujoco = ["mujoco>=3.3,<4", "onnxruntime>=1.18,<2", "imageio[ffmpeg]>=2.34,<3"]
+export = ["onnx>=1.16,<2", "onnxruntime>=1.18,<2"]
+dev = ["pytest>=8,<9", "ruff>=0.9"]
+analysis = ["matplotlib>=3.8,<4"]
+
+[project.scripts]
+amp-lab = "amp_lab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["source"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["source"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

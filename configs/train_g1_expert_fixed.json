@@ -1,0 +1,49 @@
+{
+  "policy": {
+    "actor_hidden_dims": [
+      512,
+      256,
+      128
+    ],
+    "critic_hidden_dims": [
+      512,
+      256,
+      128
+    ],
+    "activation": "elu",
+    "init_noise_std": 0.5
+  },
+  "algorithm": {
+    "num_learning_epochs": 5,
+    "num_mini_batches": 4,
+    "learning_rate": 0.0003,
+    "schedule": "adaptive",
+    "desired_kl": 0.01,
+    "gamma": 0.99,
+    "lam": 0.95,
+    "clip_param": 0.2,
+    "entropy_coef": 0.005,
+    "amp_replay_buffer_size": 100000
+  },
+  "discriminator_hidden_dims": [
+    512,
+    256
+  ],
+  "amp_reward_coef": 1.0,
+  "task_reward_lerp": 0.5,
+  "steps_per_env": 24,
+  "save_interval": 100,
+  "seed": 42,
+  "reference_state_initialization": 0.8,
+  "amp_root_velocity": true,
+  "reward_weights": {
+    "velocity": 3.0,
+    "velocity_error": -1.0,
+    "yaw": 0.2,
+    "alive": 0.1
+  },
+  "amp_feature_normalization": {
+    "method": "expert_fixed",
+    "min_std": 0.05
+  }
+}

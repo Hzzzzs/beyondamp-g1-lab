@@ -1,0 +1,6 @@
+# Supplemental packages for an existing Isaac Sim 4.5 / IsaacLab 2.1 environment.
+# Preserve the image's torch, torchvision, CUDA and SciPy installations.
+numpy<2
+onnx==1.16.1
+onnxruntime==1.20.1
+mujoco==3.3.7

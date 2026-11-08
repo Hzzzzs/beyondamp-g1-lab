@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "repositories": {
+    "beyondAMP": {
+      "url": "https://github.com/Renforce-Dynamics/beyondAMP.git",
+      "commit": "cee88cdc0958c417e316f9452f802e25a71bc289",
+      "license_status": "package metadata BSD-3-Clause; top-level license needs clarification before public distribution"
+    },
+    "robotlib": {
+      "url": "https://github.com/Renforce-Dynamics/robotlib.git",
+      "commit": "1380fe7f0f60720d40c6d2b57cf21f1d9a16fad6"
+    },
+    "assetslib": {
+      "url": "https://github.com/Renforce-Dynamics/assetslib.git",
+      "commit": "9df792784e3642163f03390bf6ae16cf88b222a5"
+    }
+  }
+}

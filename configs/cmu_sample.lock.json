@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "fps": 120.0,
+  "source": "CMU Graphics Lab Motion Capture Database, subject 07, motion 07_01 (walk)",
+  "source_page": "http://mocap.cs.cmu.edu/search.php?subjectnumber=07&motion=%",
+  "terms": ["http://mocap.cs.cmu.edu/faqs.php", "http://mocap.cs.cmu.edu/"],
+  "files": [
+    {"path": "07/07.asf", "url": "http://mocap.cs.cmu.edu/subjects/07/07.asf", "sha256": "c29414591d76a34885bff0b04a2666bf9659f869751a2549591c55277cf95b04"},
+    {"path": "07/07_01.amc", "url": "http://mocap.cs.cmu.edu/subjects/07/07_01.amc", "sha256": "3ca8e8b834481c97c32e9dd555f8c9023e33b6c52d93c9d556c83570204bf3f2"}
+  ]
+}

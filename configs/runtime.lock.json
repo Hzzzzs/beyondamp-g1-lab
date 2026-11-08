@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "target": {"os": "Ubuntu 22.04", "python": "3.10", "gpu": "RTX 4090 24GB"},
+  "isaac_sim": "4.5.0",
+  "container_base": "nvcr.io/nvidia/isaac-sim:4.5.0",
+  "isaaclab": {"tag": "v2.1.0", "commit": "21f7136325136ca3f6ca4e0a8125edffe5c24f7e", "extension_version": "0.36.21"},
+  "cpu_constraints": "constraints/cpu.txt",
+  "gpu_validation_status": "not_run",
+  "sources": [
+    "https://github.com/isaac-sim/IsaacLab/blob/v2.1.0/README.md",
+    "https://github.com/isaac-sim/IsaacLab/blob/v2.1.0/docker/.env.base",
+    "https://github.com/isaac-sim/IsaacLab/blob/v2.1.0/source/isaaclab/config/extension.toml"
+  ]
+}

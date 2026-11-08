@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "status": "candidate_requires_dynamic_validation",
+  "note": "Flat-walk height-inferred support; not measured contact. Uses the fixed CMU walk split.",
+  "retarget": {
+    "experimental_floor_ik": true,
+    "floor_ik_variant": "smooth_v4",
+    "root_height_offset": -0.06,
+    "swing_height_scale": 0.6,
+    "joint_speed_limit": null
+  }
+}

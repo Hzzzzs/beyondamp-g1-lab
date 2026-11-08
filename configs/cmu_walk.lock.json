@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "fps": 120.0,
+  "source": "CMU Graphics Lab Motion Capture Database, subject 07, walk",
+  "source_page": "http://mocap.cs.cmu.edu/search.php?subjectnumber=07&motion=%",
+  "split_note": "Held-out clips from the same person; not cross-subject generalization",
+  "files": [
+    {"path": "07/07.asf", "url": "http://mocap.cs.cmu.edu/subjects/07/07.asf", "sha256": "c29414591d76a34885bff0b04a2666bf9659f869751a2549591c55277cf95b04"},
+    {"path": "07/07_01.amc", "url": "http://mocap.cs.cmu.edu/subjects/07/07_01.amc", "sha256": "3ca8e8b834481c97c32e9dd555f8c9023e33b6c52d93c9d556c83570204bf3f2", "split": "train"},
+    {"path": "07/07_02.amc", "url": "http://mocap.cs.cmu.edu/subjects/07/07_02.amc", "sha256": "a6062c6c6bce037241d345ca8d802ab36a5cf003b60f759aa7b1db545219c065", "split": "train"},
+    {"path": "07/07_03.amc", "url": "http://mocap.cs.cmu.edu/subjects/07/07_03.amc", "sha256": "9aa43e0939fedb19d0e455c2cb5258967ade4d0e62423c32503d2ec1f9be3b8a", "split": "train"},
+    {"path": "07/07_06.amc", "url": "http://mocap.cs.cmu.edu/subjects/07/07_06.amc", "sha256": "2faa3808372f4253bf60da13cbcadb50563bc4a6a5e93acec27f20d4f83cc550", "split": "validation"}
+  ]
+}
