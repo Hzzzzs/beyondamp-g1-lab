@@ -20,6 +20,10 @@ amp-lab deploy examples/release_seed43_review_local/bundle --headless --seconds 
 
 报告中的 `completed` 应为 true、`fallen` 为 false，`mean_velocity` 第一个数约为 0.6 m/s。有桌面时去掉 `--headless` 可观看；录视频时参考[快速开始](docs/quickstart.md)。训练、双仿真、数据和限制见[项目说明](docs/quickstart.md)及[模型卡](docs/experiments/g1_amp_seed43_6000.md)。仅适用于平地仿真，未验证实机和复杂地形。示例包含上游模型许可、数据来源和训练配置，beyondAMP、robotlib作为外部依赖。
 
+## 一键工作流（开发中）
+
+已下载示例后可用 `./scripts/deploy.sh --sim mujoco` 运行，或使用 `./scripts/evaluate.sh --sim mujoco --gait --output outputs/my_evaluation` 生成矩阵和步态报告。训练和双仿真入口见[一键工作流说明](docs/one-command-workflows.md)；新入口的 Isaac/GPU 验证尚待完成。
+
 ## 项目详情
 
 以固定版本的 [beyondAMP](https://github.com/Renforce-Dynamics/beyondAMP/tree/cee88cdc0958c417e316f9452f802e25a71bc289) 为算法基础，建设从公开动作数据到 IsaacLab 训练、ONNX 导出、原生 MuJoCo 推理的工程。
