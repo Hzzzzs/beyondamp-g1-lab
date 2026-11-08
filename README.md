@@ -22,7 +22,7 @@ amp-lab deploy examples/release_seed43_review_local/bundle --headless --seconds 
 
 ## 一键工作流（开发中）
 
-已下载示例后可用 `./scripts/deploy.sh --sim mujoco` 运行，或使用 `./scripts/evaluate.sh --sim mujoco --gait --output outputs/my_evaluation` 生成矩阵和步态报告。训练和双仿真入口见[一键工作流说明](docs/one-command-workflows.md)；新入口的 Isaac/GPU 验证尚待完成。
+已下载示例后可用 `./scripts/deploy.sh --sim mujoco` 运行，或使用 `./scripts/evaluate.sh --sim mujoco --gait --output outputs/my_evaluation` 生成矩阵和步态报告。训练和双仿真入口见[一键工作流说明](docs/one-command-workflows.md)；新入口已通过 GPU 短训练、断点恢复和同策略双仿真测试。
 
 ## 项目详情
 

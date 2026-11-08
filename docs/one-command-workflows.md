@@ -35,4 +35,4 @@ export AMP_ISAACLAB=/path/to/IsaacLab
 
 使用自己的数据时，先按[数据说明](data.md)完成重定向与转换，再通过 `--motions path/a.npz path/b.npz` 指定带关节名的 50 Hz AMP 数据。`--config` 可指定训练 JSON。
 
-这组新入口的 MuJoCo 示例、checkpoint 导出和 CPU 检查已在本地验证；Isaac 训练、恢复和 Isaac 推理入口仍需在目标 GPU 环境验证。仓库中既有底层训练和双仿真结果不等同于新入口已完成 GPU 测试。
+已在 RTX 4090 D、Isaac Sim 4.5.0 / IsaacLab 2.1.0 上验证此入口：32 环境训练 10 次、从 checkpoint 恢复到 20 次、自动导出 artifact；使用同一预训练策略在 MuJoCo 与 Isaac 各完成 24 项 20 秒测试，全部不倒。训练时使用 Isaac 自带的 Python 环境；如果需要让导出入口使用该解释器，可以设置 `AMP_PYTHON=/path/to/isaac-sim/python.sh`。10/20 次训练仅用于集成诊断，不是可行走权重。不同机器和新数据仍需自行验证。
