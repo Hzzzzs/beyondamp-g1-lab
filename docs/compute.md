@@ -1,6 +1,6 @@
 # 算力与首次 GPU 实验
 
-用户已创建 gradmotion 开发机并授权连接测试。已完成真实 GPU 启动、4 环境 preflight 和 32 环境短训练；没有提交 NSCC 作业。尚无合格行走权重。
+已在 RTX 4090 D 开发机完成 GPU 启动、短训练、4096 环境训练及双模拟器平地验证。预训练示例见[仓库首页](../README.md)；没有为本项目提交 NSCC 作业。
 
 ## 目标镜像
 
@@ -36,7 +36,7 @@ GPU 安装使用 `constraints/isaac45.txt`，保留 IsaacLab 所要求的 ONNX 1
 
 NSCC 历史记录中的 ASPIRE 2A A100 资源不应直接作为 IsaacSim 替代。其 GPU 图形能力、Vulkan/渲染与 Isaac 支持需单独核实；PyTorch CUDA 可用不等于 Isaac 环境可用。目前采用用户能够提供的 RTX 4090 路线。若以后使用 NSCC，再按 skill 核对当前权限、PBS 队列与 scratch，登录节点只做轻量管理，计算任务进 PBS。
 
-本项目状态集中在 `PROJECT_STATUS.md`，不复制 SSH 密码或其他项目的认证材料。
+实验记录见 [seed43 模型卡](experiments/g1_amp_seed43_6000.md)；不要将 SSH 密码或其他项目的认证材料写入仓库。
 
 ## 本地交接包
 
